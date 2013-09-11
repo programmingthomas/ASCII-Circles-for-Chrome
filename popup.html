@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASCII circles</title>
+		<style>
+		body
+		{
+			overflow-x:hidden;
+			font-family:sans-serif;
+		}
+		#ctx
+		{
+			border:1px solid black;
+			margin:10px;
+		}
+		#buttoncontainer
+		{
+			text-align:center;
+		}
+		</style>
+	</head>
+	<body>
+		<canvas id="ctx" width="500" height="500"></canvas>
+		<p id="buttoncontainer">
+			<input type="button" value="ASCII" id="asciibutton" />
+			<input type="button" value="ASCII no spaces" id="nospacesbutton" />
+			<input type="button" value="Words" id="wordbutton" /> |
+			<input type="button" value="B&W" id="bwbutton" />
+			<input type="button" value="Color" id="colorbutton" /> |
+			<input type="button" value="Open PNG" id="pngbutton" />
+		</p>
+		<script src="rendering.js"></script>
+		<script src="popup.js"></script>
+	</body>
+</html>
